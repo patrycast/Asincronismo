@@ -1,4 +1,4 @@
-# E4: Asincronismo + API'S - Pokémon Finder
+# E4: Asincronismo + API'S 
 
 Este proyecto utiliza la API de Pokémon para buscar Pokémon por su ID y mostrar información básica como su nombre, tipo, altura, peso y una imagen en una tarjeta (card).
 
@@ -23,9 +23,6 @@ Este proyecto utiliza la API de Pokémon para buscar Pokémon por su ID y mostra
 - CSS
 - JavaScript (Fetch API para llamadas asíncronas)
 
-### Deploy:
-- [GitHub Repo](https://github.com/tu-usuario/pokemon-finder)
-- [Vercel Deployment](https://pokemon-finder.vercel.app/)
 
 ### API utilizada:
 - [PokeAPI](https://pokeapi.co/)
