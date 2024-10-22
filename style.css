@@ -11,13 +11,13 @@ body{
 .container{
     max-width: 1200px;
     margin:0 auto;
-    height:auto;
-    /* height: 600px; */
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     border: 0.2px solid rgb(74, 73, 73);
+    box-shadow: 3px 3px 65px 4px  rgb(15, 140, 224);
     margin-bottom: 50px;
 }
 h1{
@@ -66,7 +66,7 @@ input,button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 0;
+    margin: 20px 0;
     padding-bottom:40px;
     width:550px;
     border: 1px solid rgba(255, 235, 205, 0.286);
@@ -83,21 +83,41 @@ input,button{
 
 @keyframes slideInOut {
     0% {
-        transform: translateX(-50%); /* Comienza fuera de la pantalla, a la izquierda */
+        transform: translateX(-50%); 
         opacity: 0;
     }
     50% {
-        transform: translateX(50%); /* Va a la derecha */
+        transform: translateX(50%); 
         opacity: 1;
+        transform: scale(1.4);
     }
     100% {
-        transform: translateX(0); /* Termina en el centro */
+        transform: translateX(0); 
         opacity: 1;
+        transform: scale(1.2);
     }
 }
 .pokemon-card h2, p{
     margin-bottom: 12px;
+    margin-top:0;
 }
-.pokemon-card p{
+.pokemon-card p {
     font-weight: 800;
+
+}
+.info-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius: 9px;
+}
+.msg-info{
+    font-size: 32px;
+    padding: 5px 10px;
+    color: red;
+}
+.img-tryAgain{
+    width: 80px;
+    padding-right: 10px;
 }
