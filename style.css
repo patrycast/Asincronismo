@@ -1,0 +1,103 @@
+:root{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(49, 48, 48);
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    height:auto;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0.2px solid rgb(74, 73, 73);
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 48px;
+    color:rgba(29, 147, 226, 0.996);
+    text-shadow: 1px 1px 31px  rgba(255, 255, 255, 0.392);  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+input,button{
+    border: none;
+    outline: none;
+}
+.input::placeholder{
+    color: rgb(47, 45, 45);
+    font-size: 17px;
+    font-weight: 600;
+}
+.input{
+    font-size: 17px;
+    padding:13px 35px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+   
+}
+.btn{
+    border-radius: 10px;
+    background-color: rgb(59, 59, 61);
+    box-shadow: 2px 2px 32px 2px rgba(19, 19, 19, 0.592);
+    color:azure;
+    padding: 10px 65px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    margin-bottom: 30px;
+}
+.btn:hover{
+    background-color:rgb(107, 107, 110); 
+    transition: all 1s ease-in-out;
+}
+.pokemon-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    padding-bottom:40px;
+    width:550px;
+    border: 1px solid rgba(255, 235, 205, 0.286);
+    box-shadow: 8px 8px 45px 2px black ;
+    border-radius: 20px;
+    font-size: 24px; 
+}
+.poke-img{
+    width:180px;
+    filter: drop-shadow(8px 8px 4px #020202);
+    animation: slideInOut 3s ease-in-out forwards;
+
+}
+
+@keyframes slideInOut {
+    0% {
+        transform: translateX(-50%); /* Comienza fuera de la pantalla, a la izquierda */
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(50%); /* Va a la derecha */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0); /* Termina en el centro */
+        opacity: 1;
+    }
+}
+.pokemon-card h2, p{
+    margin-bottom: 12px;
+}
+.pokemon-card p{
+    font-weight: 800;
+}
