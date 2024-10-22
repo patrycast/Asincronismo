@@ -34,10 +34,12 @@ const pokeapi = async (id) => {
         }
         else {
             pokemonInfo.innerHTML = `<div class="info-Container"><p class="msg-info">Pokémon no encontrado</p> <img class="img-tryAgain" src="./img/try-again.png"></div>`;
+            pokeId.value = '';
         }
     } catch (error) {
         pokemonInfo.innerHTML =  `<div class="info-Container"><p class="msg-info">Error al buscar el Pokémon</p> <img class="img-tryAgain" src="./img/try-again.png"></div>`;
         console.error(error);
+        pokeId.value = '';
 
     }
 };
@@ -50,6 +52,7 @@ const buscarPoke = () => {
         pokeId.value = '';
     } else {
         pokemonInfo.innerHTML =`<div class="info-Container"><p class="msg-info">Por favor, ingresa un número válido</p> <img class="img-tryAgain" src="./img/try-again.png"></div>`;
+        pokeId.value = '';
     }
 };
 
